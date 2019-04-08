@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let arr =  [{
+      name:'xxx',
+      age: 18
+    }] 
+    arr.forEach(item => {
+      item.age = item.age + 1
+    })
+
+    console.log(JSON.stringify(arr))
+
+    let arr2 = [1,2,3]
+    arr2.forEach(item => {
+      item = item + 1
+    })
+
+    console.log(JSON.stringify(arr2))
+
+    // 如果循环的时候
+    let words= ['one','two','three','four']
+    words.forEach((item, index, array) => {
+      console.log(array)
+      if(item === 'two') {
+        words.shift()
+      }
+    })
+    console.table(words)
+
+    let obj = {a:{
+      b:1
+    }}
+    obj.a.b=2
+    console.log(JSON.parse(JSON.stringify(obj)))
+    
+  </script>
+</body>
+</html>
