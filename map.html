@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 普通
+    let arr = [1,2,3]
+    const arr2 = arr.map(item => {
+      return item*2
+    })  
+    console.log(JSON.stringify(arr))
+    console.table(JSON.stringify(arr2))
+    
+    // 
+    let arr3 = [1,2,3,'',null,5]
+    const arr4 = arr3.map(item=>{
+      return item*2
+    })
+    console.log(JSON.stringify(arr4))
+
+    // 无法过滤
+    let arr5 = [1,2,3,4,5]
+    const arr6 = arr5.map(item=>{
+      if(item > 3){
+        return item
+      }
+    })
+    console.log(JSON.stringify(arr6))
+
+    // 有值的时候才会调用回调
+    let arr7 = [1,2, ,4,5]
+    const arr8 = arr7.map(item=>{
+      return item*2
+    })
+    console.log(JSON.stringify(arr8))
+  </script>
+</body>
+</html>
