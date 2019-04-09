@@ -90,12 +90,19 @@ arr.sort((a,b)=>{
 
 [findIndex](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)
 
+## includes
+**判断数组是否包含一个指定的值**
+> valueToFind[, fromIndex]
+> 简单查找
+
+[includes](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
+
 ## 对照表
---|every|filter|find|forEach|map|some|sort
---|:--:|--:|--:|--:|--:|--:|--:
-值|返回boolean|返回匹配的新数组|返回第一个匹配的元素|操作原数组|返回新数组|返回boolean|操作原数组
-return|是|是|是|否|是|是|是
-应用|判断|筛选|查找|循环|新数组|判断|排序
+--|every|filter|find|forEach|map|some|sort|includes
+--|:--:|--:|--:|--:|--:|--:|--:|--:
+值|返回boolean|返回匹配的新数组|返回第一个匹配的元素|操作原数组|返回新数组|返回boolean|操作原数组|返回boolean
+return|是|是|是|否|是|是|是|否
+应用|判断|筛选|查找|循环|新数组|判断|排序|查找
 
 
 ## 参考资料
